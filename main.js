@@ -4,7 +4,7 @@ const searchCity = () => {
     searchField.value = '';
     // console.log(searchText);
     const api = '339e6cdd4b9ca83e296c5a1cb0367b83';
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${searchText}&appid=${api}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchText}&appid=${api}`;
     fetch(url)
         .then(res => res.json())
         .then(data => displayTemp(data))
