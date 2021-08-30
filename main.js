@@ -18,7 +18,7 @@ const displayTemp = (dataIN) => {
     let sunriseValue = `${dataIN.sys.sunrise}`;
     let sunriseTime = new Date(sunriseValue * 1000);
     let sunsetValue = `${dataIN.sys.sunset}`;
-    let sunsetTime = new Date.hour(sunsetValue * 1000);
+    let sunsetTime = new Date(sunsetValue * 1000);
 
     const tempResult = document.getElementById('temp-result');
     tempResult.textContent = '';
