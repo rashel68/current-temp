@@ -27,6 +27,7 @@ const displayTemp = (dataIN) => {
     const div = document.createElement('div');
     div.classList.add('col');
     div.innerHTML = `
+    <img width="120px" src="http://openweathermap.org/img/w/${dataIN.weather[0].icon}.png">
         <h2 class="fw-bold">${dataIN.name}</h2>
         <h3 class="fw-bold">${cel}&deg C</h3>
         <h5>${dataIN.weather[0].main}</h5>
